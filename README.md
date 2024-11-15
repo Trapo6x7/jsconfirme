@@ -23,7 +23,9 @@ Créer une boucle for qui génère une pyramide de * dans la console. Par exempl
 
 ## Exercice 2 : Boucle foreach
 
-Créer un tableau avec les noms de tes super-héros préférés. Utiliser une boucle foreach pour afficher une phrase pour chaque super-héros, par exemple "Je suis fan de [nom du super-héros]". Le résultat :
+Créer un tableau avec les noms de tes super-héros préférés. Utiliser une boucle foreach pour 
+afficher une phrase pour chaque super-héros, par exemple "Je suis fan de [nom du super-héros]".
+ Le résultat :
 
 ```
 Je suis fan de Spiderman
@@ -40,7 +42,9 @@ Créer une boucle while qui simule un compte à rebours de 10 à 0, puis affiche
 
 ## Exercice 4 : Boucles combinées
 
-Créer un tableau avec les noms de tes amis. Utilise une boucle for pour parcourir le tableau et une boucle while à l'intérieur de la boucle for pour afficher chaque nom autant de fois que sa position dans le tableau (en commençant à 1).
+Créer un tableau avec les noms de tes amis. Utilise une boucle for pour parcourir 
+le tableau et une boucle while à l'intérieur de la boucle for pour afficher chaque 
+nom autant de fois que sa position dans le tableau (en commençant à 1).
 
 Exemple :
 
