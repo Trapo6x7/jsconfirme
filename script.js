@@ -148,7 +148,7 @@ while (resultatPlusDix != plusDix + 10){
 
 console.log(finalPlusDix);
 
-*/
+
 let plusDix2 = "jgjjyh";
 let finalPlusDix2 ="";
 
@@ -164,3 +164,24 @@ for (let i = plusDix2; i <= plusDix2 + 10 -1; i += 1){
 };
 
 console.log(finalPlusDix2);
+*/
+
+let multiplieur;
+
+while (Number.isInteger(multiplieur) === false) {
+  multiplieur = Number(prompt("Saisis un nombre"));
+}
+
+function multiplier(a) {
+  let resultat = "";
+
+  for (let i = 1; i <= 10; i += 1) {
+    resultat += a + " x " + i + " =  " + a * i + "\n";
+  }
+
+  return resultat;
+}
+
+let resultat = multiplier(multiplieur);
+
+window.alert("La table de " + multiplieur + " : " + "\n" + resultat);
