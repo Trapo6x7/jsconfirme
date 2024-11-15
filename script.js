@@ -1,4 +1,4 @@
-let iterations;
+/*let iterations;
 let resultat = "";
 
 while (Number.isInteger(iterations) === false) {
@@ -111,7 +111,8 @@ while (trueFalse != 3) {
 if (trueFalse === 3) {
   alert("Bravo :)");
 }
-
+*/
+/*
 let trueFalse2;
 
 while (Number.isInteger(trueFalse2) === false) {
@@ -123,9 +124,43 @@ while (trueFalse2 != 14) {
     if (trueFalse2 === 14) {
     alert("Bravo :)");
   } else if (trueFalse2 < 10) {
-    alert("Plus grand!");
+    alert("Plus grand :(");
   } else if (trueFalse2 > 20) {
-    alert("Plus petit!");
+    alert("Plus petit :(");
   }
 }
 
+
+let plusDix;
+
+let finalPlusDix =""
+
+while (Number.isInteger(plusDix) === false) {
+  plusDix = Number(prompt("Saisis un nombre"));
+}
+
+let resultatPlusDix = plusDix;
+
+while (resultatPlusDix != plusDix + 10){
+  resultatPlusDix += 1;
+  finalPlusDix += resultatPlusDix + "\n";
+} ;
+
+console.log(finalPlusDix);
+
+*/
+let plusDix2 = "jgjjyh";
+let finalPlusDix2 ="";
+
+while (Number.isInteger(plusDix2) === false) {
+  plusDix2 = Number(prompt("Saisis un nombre"));
+};
+
+let resultatPlusDix2 = plusDix2;
+
+for (let i = plusDix2; i <= plusDix2 + 10 -1; i += 1){
+  resultatPlusDix2 += 1;
+  finalPlusDix2 += resultatPlusDix2 + "\n";
+};
+
+console.log(finalPlusDix2);
