@@ -107,7 +107,8 @@ jusqu’à ce nombre. Par exemple, si l’on entre 5, le programme doit calculer
 
 ## Exercice 5.8
 
-Ecrire un algorithme qui demande successivement 20 nombres à l’utilisateur, et qui lui dise ensuite quel était le plus grand parmi ces 20 nombres :
+Ecrire un algorithme qui demande successivement 20 nombres à l’utilisateur, 
+et qui lui dise ensuite quel était le plus grand parmi ces 20 nombres :
 
 ```js 
 Entrez le nombre numéro 1 : 12
@@ -117,7 +118,8 @@ Entrez le nombre numéro 20 : 6
 Le plus grand de ces nombres est : 14
 ```
 
-Modifiez ensuite l’algorithme pour que le programme affiche de surcroît en quelle position avait été saisie ce nombre :
+Modifiez ensuite l’algorithme pour que le programme affiche de surcroît 
+en quelle position avait été saisie ce nombre :
 
 ```js
 C’était le nombre numéro 2
@@ -125,7 +127,9 @@ C’était le nombre numéro 2
 
 ## Exercice 5.9
 
-Réécrire l’algorithme précédent, mais cette fois-ci on ne connaît pas d’avance combien l’utilisateur souhaite saisir de nombres. La saisie des nombres s’arrête lorsque l’utilisateur entre un zéro.
+Réécrire l’algorithme précédent, mais cette fois-ci on ne connaît pas d’avance
+combien l’utilisateur souhaite saisir de nombres. La saisie des nombres s’arrête
+lorsque l’utilisateur entre un zéro.
 
 ## Exercice 5.10
 

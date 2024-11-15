@@ -164,7 +164,7 @@ for (let i = plusDix2; i <= plusDix2 + 10 -1; i += 1){
 };
 
 console.log(finalPlusDix2);
-*/
+
 
 let multiplieur;
 
@@ -185,3 +185,39 @@ function multiplier(a) {
 let resultat = multiplier(multiplieur);
 
 window.alert("La table de " + multiplieur + " : " + "\n" + resultat);
+
+
+let number;
+
+while (Number.isInteger(number) === false) {
+  number = Number(prompt("Saisis un nombre"));
+};
+
+let numberFinal=0;
+
+for (let i=1; i<= number; i += 1){
+  numberFinal += i;
+};
+
+console.log(numberFinal);
+
+*/
+
+let number;
+
+while (Number.isInteger(number) === false) {
+  number = Number(prompt("Saisis un nombre"));
+}
+
+function factorielisation(a) {
+  let i;
+  a;
+  factoriel = 1;
+
+  for (let i = 1; i <= number; i += 1) {
+    factoriel = factoriel * i;
+  }
+  return factoriel;
+}
+
+console.log(factorielisation(number));
