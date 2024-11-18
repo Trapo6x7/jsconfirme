@@ -1,4 +1,4 @@
-/*let iterations;
+let iterations;
 let resultat = "";
 
 while (Number.isInteger(iterations) === false) {
@@ -111,8 +111,8 @@ while (trueFalse != 3) {
 if (trueFalse === 3) {
   alert("Bravo :)");
 }
-*/
-/*
+
+
 let trueFalse2;
 
 while (Number.isInteger(trueFalse2) === false) {
@@ -201,7 +201,7 @@ for (let i=1; i<= number; i += 1){
 
 console.log(numberFinal);
 
-*/
+
 
 let number;
 
@@ -221,3 +221,75 @@ function factorielisation(a) {
 }
 
 console.log(factorielisation(number));
+
+let number;
+
+for (let i=0; i<= 20; i += 1){
+while (Number.isInteger(number) === false) {
+  number = Number(prompt("Saisis un nombre"));
+};
+};
+
+function calculateChange(){
+  let prices = [];
+  let price = parseInt(prompt("entre le prix de l'article: (0 pour terminer)"))
+
+  while (price != 0){
+    prices.push(price);
+    let price = parseInt(prompt("entre le prix de l'article: (0 pour terminer)"))
+  }
+
+  let total = prices.reduce((count, current) => count + current, 0);
+
+  let amountPaid = parseInt(prompt("Entrez la somme payée :"));
+  let change = amountPaid - total;
+
+  if (change === 0) {
+    return;
+  }
+
+  if (change < 0) {
+    console.log("Somme payée insuffisante");
+    return;
+  }
+
+  if (change > 0) {
+    let currencies = [ 100, 50, 20, 10, 5, 2, 1];
+    let changeToReturn = {};
+
+    currencies.forEach((currency) => {
+      let count = Math.floor(change / currency);
+      if (count > 0) {
+        changeToReturn[currency] = count;
+        change %= currency ;
+      }
+    })
+
+      Object.entries(changeToReturn).forEach(([currency, count]) => {
+        console.log(count + " X " + currency + "€ rendus ! ");
+      })
+        return changeToReturn;
+  }
+}
+
+
+function factorial(nombre) {
+  if (nombre === 0 || nombre === 1){
+    return 1;
+  };
+
+  return nombre * factorial(nombre -1);
+};
+
+function calculateChances(nombreChevauxPartants, nombreDeChevauxJoués){
+  let X = factorial(nombreChevauxPartants) / factorial(nombreChevauxPartants-nombreDeChevauxJoués);
+  let Y = factorial(nombreChevauxPartants) / (factorial(nombreDeChevauxJoués) * factorial(nombreChevauxPartants-nombreDeChevauxJoués));
+
+  console.log("Dans l’ordre : une chance sur " + X +" de gagner");
+  console.log("Dans le désordre : une chance sur " + Y +" de gagner");    
+  };
+
+  let nombreChevauxPartants = parseInt(prompt("Entrez le nombre de chevaux partant"));
+  let nombreDeChevauxJoués = parseInt(prompt("Entrez le nombre de chevaux joués"));
+
+  calculateChances(nombreChevauxPartants,nombreDeChevauxJoués);
